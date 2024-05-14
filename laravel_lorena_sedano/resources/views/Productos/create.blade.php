@@ -18,7 +18,7 @@
                 <label for="exampleInputPassword1" class="form-label">Valor</label>
                 <input type="text" class="form-control" id="valor" name="valor">
             </div>
-            <button type="submit" class="btn btn-primary">Gudardar</button>
+            <button type="submit" class="btn btn-primary">Guardar</button>
         </form>
     </div>
 @endsection

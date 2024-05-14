@@ -14,7 +14,7 @@ class ClienteController extends Controller
     public function index()
     {
         $resultado = Cliente::all();
-        return view('Clientes.Ver',compact('resultado'));
+        return view('Clientes.Ver', compact('resultado'));
     }
 
     /**
@@ -45,7 +45,6 @@ class ClienteController extends Controller
      */
     public function show(string $id)
     {
-
     }
 
     /**
