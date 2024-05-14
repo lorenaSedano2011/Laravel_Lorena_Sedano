@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Cliente;
 use Illuminate\Http\Request;
 
+
 class ClienteController extends Controller
 {
     /**
@@ -12,7 +13,8 @@ class ClienteController extends Controller
      */
     public function index()
     {
-
+        $resultado = Cliente::all();
+        return view('Clientes.Ver',compact('resultado'));
     }
 
     /**
@@ -35,7 +37,7 @@ class ClienteController extends Controller
         $dato->edad = $request->input('edad');
         $dato->email = $request->input('email');
         $dato->save();
-        return 'Cliente guardado';
+        return 'Cliente Creado Correctamente';
     }
 
     /**
@@ -43,7 +45,7 @@ class ClienteController extends Controller
      */
     public function show(string $id)
     {
-        //
+
     }
 
     /**
